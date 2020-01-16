@@ -37,7 +37,7 @@ else {
 
 function Switch_case()
 {
-console.log("1. Addition\n2. Subtraction \n3. Multiplication\n4.Division")
+document.write("1. Addition\n2. Subtraction \n3. Multiplication\n4.Division")
 var a=prompt("Enter your choice:");
 switch(a) {
     case '1': var a1=parseInt(prompt("Enter a number:"));
@@ -72,6 +72,7 @@ for(var i=0;i<=n;i++) {
     if(i%2 === 0)
     {  
         document.write(i)
+document.write('<br>')
     } 
   }
 }
@@ -84,6 +85,7 @@ var i=0;
 while(i<n)
  {
     document.write(i);
+document.write('<br>')
     i++;
  }
 }

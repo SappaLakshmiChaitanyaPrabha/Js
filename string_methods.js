@@ -1,35 +1,48 @@
 function string_methods(){
     var str='A string can be tested with string methods';
     var pos=str.indexOf('string');
-    console.log(pos);//2
+    document.write(pos);//2
+document.write('<br>')
     pos=str.lastIndexOf('string');
-    console.log(pos);//29
+    document.write(pos);//29
+document.write('<br>')
     pos=str.search('string');// it may be string or regular expression
-    console.log(p);//2
+    document.write(p);//2
+document.write('<br>')
    var re=/string/i
    pos=re.test(str);
     var p=str.match(re)
-    console.log(pos);
-    console.log(p)
+    document.write(pos);
+document.write('<br>')
+    document.write(p)
+document.write('<br>')
     re=/string/g
     pos=str.match(re);
-    console.log(pos);
+    document.write(pos);
+document.write('<br>')
     pos=re.exec(str);
-    console.log(pos);
+    document.write(pos);
+document.write('<br>')
     pos=str.replace('string','JavaScript');
-    console.log(pos);
+    document.write(pos);
+document.write('<br>')
     var a='javascript';
     var str1=a.slice(2);
-    console.log(str1);
+    document.write(str1);
+document.write('<br>')
     var b='abcde'
     var c=b.split(',');
-    console.log(c)
+    document.write(c)
+document.write('<br>')
     c=a.substring(2,4)//va
-    console.log(c)
+    document.write(c)
+document.write('<br>')
     var d=b.toUpperCase();
-console.log(d);
+document.write(d);
+document.write('<br>')
     d=b.toLowerCase();
-    console.log(d);
+    document.write(d);
+document.write('<br>')
     d=b.charAt(0)
-    console.log(d);
+    document.write(d);
 }
