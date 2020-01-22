@@ -1,15 +1,12 @@
 document.write("Hello");
-function Break_stmt(){
+function Break_continue(){
 for(let i=0;i<5;i++) {
     if (i==3) {
         break;
     }
     document.write(i);
 }
-}
 
-
-function Continue_stmt(){
 for(let i=0;i<5;i++) {
     if (i==3) {
         continue;

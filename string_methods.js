@@ -30,19 +30,43 @@ document.write('<br>')
     var str1=a.slice(2);
     document.write(str1);
 document.write('<br>')
-    var b='abcde'
+    var b='this is example for string split mthod '
     var c=b.split(',');
     document.write(c)
 document.write('<br>')
     c=a.substring(2,4)//va
     document.write(c)
 document.write('<br>')
-    var d=b.toUpperCase();
+    var d=a.toUpperCase();
 document.write(d);
 document.write('<br>')
-    d=b.toLowerCase();
+    d=a.toLowerCase();
     document.write(d);
 document.write('<br>')
     d=b.charAt(0)
     document.write(d);
+    document.write('<br>')
+    var str1="This is Example for string method"
+    document.write(str1.charCodeAt(3));
+    document.write('<br>')
+    s1='Hello'
+    s2='World!'
+    document.write(s1.concat(' ',s2))
+    document.write('<br>')
+    document.write(s1.includes('H',1))
+    document.write(s1.includes('H'))
+	document.write(s1.endsWith('a'))
+    document.write(s1.startsWith('a'))
+    document.write('<br>')
+    document.write(s1+s2.repeat(5))
+    document.write('<br>')
+    document.write(s1.padEnd(10,'.'))
+    document.write('<br>')
+     document.write(s2.padStart(10,'.'))
+     document.write('<br>')
+     document.write(s1.localeCompare(s1))
+     document.write(s1.localeCompare(s2))
+     document.write(s2.localeCompare(s1))
+document.write(s1.toLocaleLowerCase('en-us'))
 }
+

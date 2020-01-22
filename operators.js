@@ -48,6 +48,15 @@ document.write('<br>')
     c=(a === b);
     document.write(c);// false
 document.write('<br>')
+//!== and !=
+document.write(a!=b)
+document.write(a!==b)
+b=a;
+document.write(a!=b)
+var s;
+document.write(s!=null)
+document.write(s!==null)
+document.write(s!=NaN)
 }
 
 
