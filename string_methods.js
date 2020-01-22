@@ -69,4 +69,32 @@ document.write('<br>')
      document.write(s2.localeCompare(s1))
 document.write(s1.toLocaleLowerCase('en-us'))
 }
-
+function array_Methods(){
+	var arr=[]
+	arr.push("Banana")
+	arr.push("Apple")
+	arr.push("Orange")
+	document.write(arr,'<br>');
+	arr.pop()
+	document.write(arr,'<br>');
+	arr.shift()
+	document.write(arr,'<br>');
+	arr.unshift("Watermelon")
+	document.write(arr,'<br>');
+	var ind=arr.indexOf("Apple");
+	document.write(ind,'<br>');
+	arr.splice(2,1);
+	document.write(arr,'<br>');
+	var cpy=arr.slice()
+	document.write(cpy,'<br>');
+	var arr1=arr.reverse();
+	document.write(arr1,'<br>');
+    var arr1=arr.sort();
+	document.write(arr1,'<br>');
+	document.write(arr1.join('-'),'<br>');
+  arr.push("Papaya");
+  arr.push("orange")
+  arr.push("Guava")
+  document.write(arr,'<br>')
+document.write(arr.fill("Fruit",3,5),'<br>')
+}
