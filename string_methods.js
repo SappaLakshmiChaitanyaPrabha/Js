@@ -69,7 +69,10 @@ document.write('<br>')
      document.write(s2.localeCompare(s1))
 document.write(s1.toLocaleLowerCase('en-us'))
 }
+
+
 function array_Methods(){
+	//mutator methods
 	var arr=[]
 	arr.push("Banana")
 	arr.push("Apple")
@@ -97,4 +100,60 @@ function array_Methods(){
   arr.push("Guava")
   document.write(arr,'<br>')
 document.write(arr.fill("Fruit",3,5),'<br>')
+var a=['a','b','c','d','e']
+document.write(a.copyWithin(2,4,5),'<br>')
+document.write(a.copyWithin(-2,-4),'<br>')
+
+//Accessor methods
+var arr1=['ab','bc','ca']
+var arr2=['de','ef','fg']
+document.write(arr1.concat(arr2),'<br>');
+arr1.push("abc");
+document.write(arr1.filter(arr1=>arr.length>2),'<br>')
+document.write(arr1.slice(2),'<br>')
+document.write(arr1.slice(2,4),'<br>')
+document.write(arr1.slice(-2),'<br>');
+document.write(arr2.includes('ef',1),'<br>')
+document.write(arr2.includes('fg',0),'<br>')
+document.write(arr1.join('+'),'<br>');
+document.write(arr2.join(""),'<br>')
+document.write(arr1.lastIndexOf('ab'))
+document.write(arr1.lastIndexOf('ab',-3),'<br>');
+var a =[1,4,6,3,9,9,0]
+document.write(a.toString(),'<br>');
+var b=[1,'a',new Date('1 Feb 2020 12:36 UTC')]
+document.write(b.toLocaleString('en',{timezone:'UTC'}),'<br>')
+
+//Iterator methods
+var iterator=arr1.values();
+for (var v of iterator){
+document.write(v,'<br>')
 }
+var i=arr1.keys();
+for (var v of i){
+document.write(v,'<br>')
+}
+function sam(elem){
+return elem>10;
+}
+var arr3=[5,2,12,34,8];
+document.write(arr3.some(sam),'<br>');
+document.write(arr3.find(sam),'<br>');
+document.write(arr3.findIndex(sam),'<br>')
+document.write(arr3.every((ele)=>ele<40),'<br>')
+document.write(arr3.map(x=>x*2),'<br>')
+var t=arr3.entries();
+document.write(t.next().value,'<br>')
+var cpy=[];
+arr3.forEach(function(i){
+	cpy.push(i);
+})
+document.write(cpy,'<br>');
+document.write(arr3.reduce(function(acc,val){
+	return acc+val;
+}),'<br>')
+document.write(arr3.reduceRight(function(acc,val){
+	return acc+val;
+}),'<br>')
+}
+
